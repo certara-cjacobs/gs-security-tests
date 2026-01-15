@@ -115,6 +115,7 @@ test.describe('login suite', () => {
         const noPermPassword = credentials.noPermissionsUser.password;
 
         await login.login(noPermUsername, noPermPassword);
+        await PageHelper.waitForPageLoad(page);
 
         // Should see access denied message
         const isAccessDenied = await dashboard.isAccessDenied();

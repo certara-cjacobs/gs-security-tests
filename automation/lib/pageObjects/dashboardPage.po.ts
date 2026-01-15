@@ -39,7 +39,7 @@ export class DashboardPage extends BasePage {
         this.gridRows = page.locator('.MuiDataGrid-row').or(page.locator('[role="row"]'));
 
         // Access denied alert
-        this.accessDeniedAlert = page.getByText(/access denied/i);
+        this.accessDeniedAlert = page.getByText(/access denied\.?/i);
 
         // Navigation
         this.navBar = page.locator('nav').or(page.locator('[role="navigation"]'));
