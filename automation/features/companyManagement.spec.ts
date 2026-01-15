@@ -13,8 +13,8 @@ test.describe('company management suite', () => {
     let companyDialog: CompanyDialog;
     let page: Page;
     let capture: PageVideoCapture;
-    const username = credentials.supportUser.username;
-    const password = credentials.supportUser.password;
+    const username = credentials.admin.username;
+    const password = credentials.admin.password;
 
     test.beforeEach(async ({ browser }, testInfo) => {
         XrayHelper.addTestInfo(

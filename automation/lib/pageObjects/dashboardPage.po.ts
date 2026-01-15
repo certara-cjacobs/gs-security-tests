@@ -34,9 +34,9 @@ export class DashboardPage extends BasePage {
         this.addButton = page.getByRole('button', { name: /add/i });
         this.searchInput = page.getByPlaceholder(/search/i);
 
-        // Grid elements (MUI DataGrid or custom grid)
-        this.gridContainer = page.locator('[data-testid="repo-grid"]').or(page.locator('.MuiDataGrid-root'));
-        this.gridRows = page.locator('.MuiDataGrid-row').or(page.locator('[role="row"]'));
+        // Grid elements (MUI Table)
+        this.gridContainer = page.locator('.MuiTableContainer-root');
+        this.gridRows = page.locator('tbody.MuiTableBody-root .MuiTableRow-root');
 
         // Access denied alert
         this.accessDeniedAlert = page.getByText(/access denied\.?/i);
