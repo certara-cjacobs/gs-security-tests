@@ -2,18 +2,18 @@ const base_url = 'https://globalsubmit.test.certara.net/Security/';
 const credentials = {
     admin: {
         username: 'automation3@globalsubmit.com',
-        password: 'wR0rkNHQ9A^nY5pb',
+        password: '',
         workspace: 'Automation3 Space',
         userName: 'Automation 3',
     },
     adminSameOrganization: {
         username: 'automation3@globalsubmit.com',
-        password: 'wR0rkNHQ9A^nY5pb',
+        password: '',
         workspace: 'Automation3 Space',
     },
     adminOtherOrganization: {
         username: 'automation4@globalsubmit.com',
-        password: 'x6XIWQ%Txu54v9^o',
+        password: '',
         workspace: 'Automation3 Space',
     },
     incorrect_user: {
@@ -23,11 +23,11 @@ const credentials = {
     },
     noPermissionsUser: {
         username: 'automation31@globalsubmit.com',
-        password: 'I#hip5i*3dRSWAX2',
+        password: '',
     },
     singleSpaceUser: {
         username: 'automation4@globalsubmit.com',
-        password: 'x6XIWQ%Txu54v9^o',
+        password: '',
         workspace: 'Automation4 Space',
       
     },
